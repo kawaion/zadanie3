@@ -13,7 +13,7 @@ public class PersonB {
         this.creditCount = creditCount;
     }
 
-    public static class Builder{
+    public static class Builder {
         private int age;
         private int income;
         private int workExperience;
@@ -39,7 +39,7 @@ public class PersonB {
             return this;
         }
 
-        public PersonB build(){
+        public PersonB build() {
             return new PersonB(age, income, workExperience, creditCount);
         }
     }

@@ -1,7 +1,7 @@
 package ChainOfResponsibility;
 
 public interface CreditHandler {
-    CreditHandler SetNext(CreditHandler handler);
+    CreditHandler setNext(CreditHandler handler);
 
-    String Handle(Credit credit);
+    String handle(Credit credit);
 }

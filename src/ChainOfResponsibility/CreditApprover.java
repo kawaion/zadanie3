@@ -1,16 +1,12 @@
 package ChainOfResponsibility;
 
 public class CreditApprover {
-    public static String CheckApprove(Credit credit, AbstractCreditHandler handler)
-    {
-        var result = handler.Handle(credit);
+    public static String CheckApprove(Credit credit, AbstractCreditHandler handler) {
+        var result = handler.handle(credit);
 
-        if (result != null)
-        {
+        if (result != null) {
             return result;
-        }
-        else
-        {
+        } else {
             return "одобрено";
         }
     }

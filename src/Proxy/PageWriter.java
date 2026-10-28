@@ -9,11 +9,11 @@ public class PageWriter {
         book = new BookProxy(new Book());
     }
 
-    public String getPages(List<Integer> pageNumbers){
-        String result = "";
-        for(var number : pageNumbers){
-            result += book.getPage(number) + "\n";
+    public String getPages(List<Integer> pageNumbers) {
+        StringBuilder result = new StringBuilder();
+        for (var number : pageNumbers) {
+            result.append(book.getPage(number)).append("\n");
         }
-        return result;
+        return result.toString();
     }
 }

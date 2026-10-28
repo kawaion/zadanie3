@@ -1,6 +1,6 @@
 package Decorator;
 
-public class Cheese extends additionalIngredient{
+public class Cheese extends AdditionalIngredient {
     public Cheese(Ingredient ingredient) {
         super(ingredient);
     }

@@ -1,6 +1,6 @@
 package Decorator;
 
-public class Pepperoni extends additionalIngredient{
+public class Pepperoni extends AdditionalIngredient {
     public Pepperoni(Ingredient ingredient) {
         super(ingredient);
     }

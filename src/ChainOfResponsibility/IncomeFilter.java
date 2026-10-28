@@ -2,15 +2,12 @@ package ChainOfResponsibility;
 
 public class IncomeFilter extends AbstractCreditHandler {
     @Override
-    public String Handle(Credit credit) {
+    public String handle(Credit credit) {
         int income = credit.getPerson().getIncome();
-        if (income < 50000 || income > 150000)
-        {
+        if (income < 50000 || income > 150000) {
             return "доход не подходит\n";
-        }
-        else
-        {
-            return super.Handle(credit);
+        } else {
+            return super.handle(credit);
         }
     }
 }

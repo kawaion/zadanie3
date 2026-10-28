@@ -1,26 +1,21 @@
 package Decorator;
 
-public abstract class additionalIngredient extends Ingredient{
+public abstract class AdditionalIngredient extends Ingredient {
     protected Ingredient ingredient;
 
-    public additionalIngredient(Ingredient ingredient)
-    {
+    public AdditionalIngredient(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
 
-    public void SetComponent(Ingredient ingredient)
-    {
+    public void SetComponent(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
 
     @Override
     public String show() {
-        if (this.ingredient != null)
-        {
+        if (this.ingredient != null) {
             return this.ingredient.show();
-        }
-        else
-        {
+        } else {
             return "";
         }
     }
